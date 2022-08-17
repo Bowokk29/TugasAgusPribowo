@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TUGAS 10,11,12,13</string>
+    <string name="judul_catatan_nantinya_disini">Judul catatan nantinya disini</string>
+    <string name="pertemuan_10_11_12_13">PERTEMUAN 10,11,12,13</string>
+    <string name="daftar_catatan">Daftar Catatan</string>
+    <string name="buat_catatan">Buat Catatan</string>
+    <string name="judul_catatan">Judul catatan</string>
+    <string name="simpan">Simpan</string>
+    <string name="konten_catatan">Konten catatan</string>
+    <string name="batal">Batal</string>
+    <string name="hapus_semua">Hapus Semua</string>
+    <string name="agus_pribowo_190401202">Agus Pribowo - 190401202</string>
+</resources>

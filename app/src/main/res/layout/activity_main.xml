@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutUtama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/buatCatatanBaru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="?selectableItemBackground"
+            android:fontFamily="serif"
+            android:padding="5dp"
+            android:text="@string/buat_catatan"
+            android:textColor="@color/purple_700"
+            android:textSize="30sp"
+            app:drawableStartCompat="@drawable/ic_tambah" />
+
+        <TextView
+            android:id="@+id/daftarCatatan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackground"
+            android:fontFamily="serif"
+            android:padding="5dp"
+            android:text="@string/daftar_catatan"
+            android:textColor="@color/purple_700"
+            android:textSize="30sp"
+            app:drawableStartCompat="@drawable/ic_daftar" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/identitas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:translationY="180dp">
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="serif"
+            android:padding="5dp"
+            android:text="@string/pertemuan_10_11_12_13"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/agus_pribowo_190401202"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutCatatan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/layoutJudul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="4dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/colorAccent"/>
+            <EditText
+                android:id="@+id/judulCatatan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:autofillHints="no"
+                android:background="@null"
+                android:fontFamily="serif"
+                android:gravity="center_vertical"
+                android:hint="@string/judul_catatan"
+                android:inputType="textCapWords"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/simpanCatatan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="serif"
+                android:text="@string/simpan"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:drawableTopCompat="@drawable/ic_simpan" />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/isiCatatan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutJudul"
+            android:layout_margin="20dp"
+            android:autofillHints="no"
+            android:background="@null"
+            android:fontFamily="serif"
+            android:gravity="top"
+            android:hint="@string/konten_catatan"
+            android:inputType="textMultiLine|textCapSentences"
+            android:minHeight="250dp"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/batal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="serif"
+            android:text="@string/batal"
+            android:textColor="@color/white"
+            android:textSize="25sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
